@@ -1,0 +1,31 @@
+{
+  "name": "domktorymysli/grenton-client",
+  "description": "Grenton php client",
+  "keywords": [
+    "grenton",
+    "inteligent house"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "tciunelis"
+    }
+  ],
+  "type": "library",
+  "require": {
+    "php": "^5.5|^7.0",
+    "symfony/yaml": "^2.3|^3.0",
+    "symfony/console": "^4.0",
+    "monolog/monolog": "^1.23",
+    "react/datagram": "1.3.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.1|^5.0|^6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "": "src/",
+      "Tests\\": "tests/"
+    }
+  }
+}
