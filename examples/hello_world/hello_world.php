@@ -17,9 +17,9 @@ $command = new CluFunctionCommand("192.168.1.1", "hello_world", []);
 $propertiesFile = __DIR__ . '/../properties-dist.xml';
 
 try {
-    echo "Wysylanie wiadomosci: {$command->getBody()}";
+    echo "Wysylanie wiadomosci: {$command->getCommand()}\n";
     $response = $appContainer->getApi($propertiesFile)->send($command);
-    echo "Odebrano wiadomosc: {$response->getBody()}";
+    echo "Odebrano wiadomosc: {$response->getBody()}\n";
 } catch (\Exception $e) {
     $appContainer->getLogger()->error($e);
     echo "Wystapil blad: {$e->getMessage()}";
