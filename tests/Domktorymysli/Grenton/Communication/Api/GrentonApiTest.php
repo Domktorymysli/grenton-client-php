@@ -14,7 +14,7 @@ final class GrentonApiTest extends TestCase
     public function testSend()
     {
         $propertiesLoader = new PropertiesLoaderImpl();
-        $properties = $propertiesLoader->loadProperties("../../../../../properties-dist.xml");
+        $properties = $propertiesLoader->loadProperties(__DIR__ . "/../../../../resources/properties-dist.xml");
 
         $encoder = new EncoderGrenton($properties->getCluKey(), $properties->getCluIv());
         $clu = new Clu($properties->getCluIp(), $properties->getCluPort());

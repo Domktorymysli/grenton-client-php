@@ -12,7 +12,7 @@ final class PropertiesLoaderImplTest extends TestCase
     {
 
         $propertiesLoader = new PropertiesLoaderImpl();
-        $properties = $propertiesLoader->loadProperties("properties-dist.xml");
+        $properties = $propertiesLoader->loadProperties(__DIR__ . "/../../../resources/properties-dist.xml");
         $this->assertEquals("192.168.2.200", $properties->getCluIp());
         $this->assertEquals(1234, (int)$properties->getCluPort());
         $this->assertEquals("KY1Ajg+pDBQcP2cHnIFNRQ==", $properties->getCluKey());

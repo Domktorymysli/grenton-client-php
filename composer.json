@@ -15,7 +15,7 @@
   "require": {
     "php": "^5.5|^7.0",
     "symfony/yaml": "^2.3|^3.0",
-    "symfony/console": "^4.0",
+    "symfony/console": "^3.0",
     "monolog/monolog": "^1.23"
   },
   "require-dev": {
